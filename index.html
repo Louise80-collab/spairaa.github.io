@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPAIRAA — AI Solutions for Modern Businesses</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;color:#2d1a14;background:#fff}
+.hero{background:linear-gradient(135deg,#fce8e8 0%,#fdf0ed 50%,#fce4d6 100%);padding:4rem 2rem 3rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;border-radius:50%;background:rgba(212,83,126,0.08)}
+.hero::after{content:'';position:absolute;bottom:-30px;left:-30px;width:150px;height:150px;border-radius:50%;background:rgba(212,83,126,0.06)}
+.brand{font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:500;letter-spacing:8px;color:#8b3a5a;margin-bottom:8px}
+.brand-sub{font-size:12px;letter-spacing:4px;color:#b87a8a;font-weight:300;text-transform:uppercase;margin-bottom:2rem}
+.hero-tag{font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;color:#5c2a3a;line-height:1.5;max-width:560px;margin:0 auto 2rem}
+.hero-cta{display:inline-block;background:#8b3a5a;color:#fff;padding:16px 44px;border-radius:40px;font-size:15px;font-weight:500;letter-spacing:1px;text-decoration:none;transition:all 0.2s}
+.hero-cta:hover{background:#6d2a45}
+.hero-note{font-size:12px;color:#b87a8a;margin-top:12px}
+.section-label{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#b87a8a;font-weight:500;margin-bottom:8px;text-align:center}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:500;color:#3d1a26;text-align:center;margin-bottom:2.5rem;line-height:1.3}
+.services{background:#fdf8f6;padding:4rem 2rem}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:960px;margin:0 auto}
+.service-card{background:#fff;border-radius:16px;padding:2rem;border:0.5px solid rgba(212,83,126,0.15);transition:all 0.2s}
+.service-card:hover{border-color:rgba(212,83,126,0.35);transform:translateY(-3px)}
+.service-icon{width:48px;height:48px;border-radius:12px;background:#fce8f0;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px}
+.service-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:#3d1a26;margin-bottom:10px;line-height:1.3}
+.service-desc{font-size:14px;color:#7a5a62;line-height:1.6}
+.gains{background:#fff;padding:4rem 2rem}
+.gains-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:900px;margin:0 auto}
+.gain-item{background:#fdf8f6;border-radius:12px;padding:1.5rem;border-left:3px solid #c4607e}
+.gain-title{font-size:15px;font-weight:500;color:#3d1a26;margin-bottom:8px}
+.gain-desc{font-size:13px;color:#7a5a62;line-height:1.6}
+.trust{background:#3d1a26;padding:4rem 2rem;text-align:center}
+.trust-title{font-family:'Cormorant Garamond',serif;font-size:32px;color:#fce8f0;margin-bottom:2rem;font-style:italic}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:600px;margin:0 auto}
+.trust-num{font-family:'Cormorant Garamond',serif;font-size:42px;color:#f4a0b8;font-weight:500}
+.trust-label{font-size:13px;color:#d4a0b0;margin-top:6px}
+.cta{background:linear-gradient(135deg,#fce8e8 0%,#fdf0ed 100%);padding:5rem 2rem;text-align:center}
+.cta-title{font-family:'Cormorant Garamond',serif;font-size:40px;color:#3d1a26;margin-bottom:10px;font-style:italic}
+.cta-sub{font-size:15px;color:#7a5a62;margin-bottom:2rem}
+.cta-pills{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:2rem}
+.cta-pill{background:#fff;border:0.5px solid rgba(212,83,126,0.3);border-radius:20px;padding:8px 20px;font-size:13px;color:#8b3a5a}
+.cta-btn{display:inline-block;background:#8b3a5a;color:#fff;padding:18px 52px;border-radius:40px;font-size:16px;font-weight:500;letter-spacing:1px;text-decoration:none;transition:all 0.2s;margin-bottom:16px}
+.cta-btn:hover{background:#6d2a45}
+.cta-email{font-size:14px;color:#b87a8a;margin-top:10px}
+.cta-email a{color:#8b3a5a;text-decoration:none;border-bottom:1px solid rgba(139,58,90,0.3)}
+.footer{background:#2d1a14;padding:2rem;text-align:center}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:28px;color:#f4a0b8;letter-spacing:5px;margin-bottom:8px}
+.footer-copy{font-size:12px;color:#7a5a62}
+@media(max-width:600px){
+.brand{font-size:42px}
+.hero-tag{font-size:18px}
+.trust-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="brand">SPAIRAA</div>
+  <div class="brand-sub">AI Solutions for Modern Businesses</div>
+  <div class="hero-tag">Book more clients, respond instantly, and grow your revenue — without hiring more staff</div>
+  <a href="mailto:spaira.hq@gmail.com" class="hero-cta">Book a Free Strategy Call</a>
+  <div class="hero-note">No obligation · 20 minutes · Personalized insights</div>
+</div>
+
+<div class="services">
+  <div class="section-label">What We Build For You</div>
+  <div class="section-title">AI Agents That Work While You Sleep</div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">💬</div>
+      <div class="service-name">FAQ AI Chat Agent</div>
+      <div class="service-desc">Instantly answers your customers' most common questions 24/7 — no waiting, no staff needed.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📅</div>
+      <div class="service-name">Appointment Setting Agent</div>
+      <div class="service-desc">Books appointments automatically without back-and-forth emails or manual scheduling.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🛍️</div>
+      <div class="service-name">Product Recommendation Agent</div>
+      <div class="service-desc">Dynamically recommends the right products based on each customer's unique needs and preferences.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🤝</div>
+      <div class="service-name">Customer Service AI Agent</div>
+      <div class="service-desc">Handles customer inquiries warmly and professionally — escalating to humans only when truly needed.</div>
+    </div>
+  </div>
+</div>
+
+<div class="gains">
+  <div class="section-label">What You'll Gain</div>
+  <div class="section-title">Real Results for Real Businesses</div>
+  <div class="gains-grid">
+    <div class="gain-item">
+      <div class="gain-title">Instant responses, every time</div>
+      <div class="gain-desc">Your AI agent responds to every client inquiry within seconds — day or night.</div>
+    </div>
+    <div class="gain-item">
+      <div class="gain-title">Higher-quality leads captured</div>
+      <div class="gain-desc">Automatically collect and qualify leads so your team only talks to serious buyers.</div>
+    </div>
+    <div class="gain-item">
+      <div class="gain-title">More bookings, less effort</div>
+      <div class="gain-desc">Fill your calendar without manual follow-ups or back-and-forth scheduling.</div>
+    </div>
+    <div class="gain-item">
+      <div class="gain-title">Revenue without extra staff</div>
+      <div class="gain-desc">Scale your business without the overhead of hiring and training new employees.</div>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="trust-title">Trusted by forward-thinking businesses</div>
+  <div class="trust-grid">
+    <div>
+      <div class="trust-num">24/7</div>
+      <div class="trust-label">Always-on AI support</div>
+    </div>
+    <div>
+      <div class="trust-num">4+</div>
+      <div class="trust-label">AI agent types deployed</div>
+    </div>
+    <div>
+      <div class="trust-num">100%</div>
+      <div class="trust-label">Custom built for you</div>
+    </div>
+  </div>
+</div>
+
+<div class="cta">
+  <div class="section-label">Ready to Get Started?</div>
+  <div class="cta-title">Let's Build Your AI Agent Together</div>
+  <div class="cta-sub">Book a free 20-minute strategy call — no obligation, just personalized insights for your business.</div>
+  <div class="cta-pills">
+    <span class="cta-pill">No obligation</span>
+    <span class="cta-pill">20 minutes</span>
+    <span class="cta-pill">Personalized insights</span>
+  </div>
+  <a href="mailto:spaira.hq@gmail.com" class="cta-btn">Book My Free Strategy Call</a>
+  <div class="cta-email">Have questions first? Email us at <a href="mailto:spaira.hq@gmail.com">spaira.hq@gmail.com</a></div>
+</div>
+
+<div class="footer">
+  <div class="footer-brand">SPAIRAA</div>
+  <div class="footer-copy">AI Solutions for Modern Businesses · spaira.hq@gmail.com</div>
+</div>
+
+</body>
+</html>
